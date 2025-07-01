@@ -3,7 +3,7 @@ import './Submit.css'
 function Submit() {
   return (
     <div className="submit-body">
-      <h2>How to Submit Your Project to WebCraft</h2>
+      <h2 classame="title-submit">How to Submit Your Project to WebCraft</h2>
       <ul id="main">
         <li><b>1. Fork the Repository:</b> <br/> Visit the GitHub repository and click on Fork. This
 will create a copy under your GitHub account. 

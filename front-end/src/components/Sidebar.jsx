@@ -17,9 +17,10 @@ function Sidebar() {
     return localStorage.getItem('theme') === 'dark'
   })
 
-  const [hamburgerOpen, setHamburgerOpen] = useState(window.innerWidth <= 500 ? false : true);
+  const [hamburgerOpen, setHamburgerOpen] = useState(window.innerWidth <= 768 ? false : true);
 
   const toggleHamburger = () => {
+    if(window.innerWidth <= 768)
     setHamburgerOpen(!hamburgerOpen);
   }
 
@@ -40,15 +41,15 @@ function Sidebar() {
       <h1 className="logo">WebCraft</h1>
       
       <nav className="nav-links">
-        <NavLink to="/" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
+        <NavLink to="/" onClick={toggleHamburger} className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
           <AiFillHome className='react-logo' />
           <span className='nav-text'>Home</span>
         </NavLink>
-        <NavLink to="/mentor" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
+        <NavLink to="/mentor" onClick={toggleHamburger} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
           <AiOutlineAudit className='react-logo' />
           <span className='nav-text'>Mentor</span>
         </NavLink>
-        <NavLink to="/submission-guide" className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
+        <NavLink to="/submission-guide" onClick={toggleHamburger} className={({isActive}) => isActive ? 'nav-link active' : 'nav-link'}>
           <MdHelpOutline className='react-logo' />
           <span className='nav-text'>How to Submit?</span>
         </NavLink>

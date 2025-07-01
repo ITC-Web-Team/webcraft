@@ -26,3 +26,9 @@ code {
   font-weight: 500;
   font-size: 1em;
 }
+
+@media (max-width: 768px){
+  .title-submit {
+    font-size: 1.4rem;
+  }
+}

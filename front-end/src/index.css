@@ -9,6 +9,7 @@
   --card: white;
   --submit-text: #314368;
   --code-color: #1f1f1f;
+  --small-text: #000000;
 }
 
 [data-theme='dark'] {
@@ -22,6 +23,7 @@
   --card: var(--sidebar-bg);
   --submit-text: #a7ddfb;
   --code-color: #dadada;
+  --small-text: hsla(0, 0%, 100%, 0.90);
 }
 
 body {
@@ -51,7 +53,7 @@ h2{
 }
 
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .main-content {
     margin: 0;
     padding-left: 1rem;

@@ -15,9 +15,8 @@
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-start;
-
+  transition: transform 0.3s ease-in-out;
   border-right: hsla(223, 34%, 88%, 0.60) 1px solid;
-  transition: 0.2s ease;
 }
 
 .sidebar-inactive {
@@ -101,14 +100,22 @@
   display: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .ham-button {
+    z-index: 999;
     display:block;
     position: fixed;
-    top: 16px;
-    left: 16px;
+    top: 1rem;
+    left: 1rem;
+    padding: 0.5rem;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    cursor: pointer;
+
   }
   #hambutton {
+
+    vertical-align: middle;
     color: var(--logo);
   }
   .nav-links a {
@@ -119,6 +126,12 @@
     size: 20px;
   }
   .sidebar {
+    transition: transform 0.3s ease-in-out;
+
     width: auto;
+    z-index: 998;
+  }
+  .logo {
+    margin-top: 3rem;
   }
 }
