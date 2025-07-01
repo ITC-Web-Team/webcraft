@@ -4,6 +4,8 @@ import './CardList.css'
 const modules = import.meta.glob('../mentees/**/index.jsx', { eager: true })
 
 function CardList() {
+
+  document.title = "Submissions";
   const menteeCards = Object.entries(modules).map(([path, module]) => {
     const name = path.split('/')[2] // mentee folder name
     const meta = module.meta || {}

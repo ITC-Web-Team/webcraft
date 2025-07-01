@@ -21,6 +21,7 @@
     transition: transform 0.2s ease, box-shadow 0.2s ease;
     display: flex;
     flex-direction: column;
+
 }
 
 .mentor-card:hover {
@@ -42,17 +43,21 @@
 
   display: flex;
   flex-wrap: wrap;
-  padding: 1rem;
   color: black;
+  padding: 1rem;
+  padding-bottom: 0.5rem;
+  justify-content:space-between;
 }
 
 .card-info-mentor h3 {
     display: flex;
   margin: 0;
   justify-content: flex-start;
-  font-family: 'helvetica', sans-serif;
+  font-family: 'archivo', Tahoma, Verdana, sans-serif;
   font-size: 1.6rem;
   font-weight: 600;
+  color: var(--text-color);
+
 }
 
 
@@ -63,18 +68,21 @@
     display: block;
   font-family: 'Satoshi', sans-serif;
   font-size: 0.8rem;
-  color: var(--text-color);
-  margin-top: 0.5rem;
+  color: var(--small-text);
+  margin-top: 0rem;
+  margin-left: 1rem;
+
+
 }
 
 .social {
-
-    display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-end;
 }
 
 .social-icon {
+    padding-left: 0.12rem;
+    padding-right: 0.12rem;
     color: var(--logo);
 }
   

@@ -1,6 +1,8 @@
 import './Submit.css'
 
 function Submit() {
+
+  document.title = "How to Submit";
   return (
     <div className="submit-body">
       <h2 classame="title-submit">How to Submit Your Project to WebCraft</h2>
